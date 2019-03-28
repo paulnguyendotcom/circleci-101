@@ -46,7 +46,7 @@ jobs:
             set -xu
             mkdir -p ${TEST_REPORTS}
             touch ${TEST_REPORTS}/test.sh
-            chmmod u+x ${TEST_REPORTS}/test.sh
+            chmod u+x ${TEST_REPORTS}/test.sh
             echo "echo Hello World!" > ${TEST_REPORTS}/test.sh
             bash ${TEST_REPORTS}/test.sh > ${TEST_REPORTS}/ouput
             
