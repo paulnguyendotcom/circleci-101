@@ -43,7 +43,7 @@ jobs:
             SSH_TARGET: "localhost"
             TEST_ENV: "linux"
           command: |
-            set -xu
+            set -eo pipefail
             mkdir -p ${TEST_REPORTS}
             touch ${TEST_REPORTS}/test.sh
             chmod u+x ${TEST_REPORTS}/test.sh
